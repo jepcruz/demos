@@ -10,37 +10,36 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import xyz.yoandroide.persona.model.Pais;
-import xyz.yoandroide.persona.repository.PaisRepository;
+import xyz.yoandroide.persona.model.Cliente;
+import xyz.yoandroide.persona.repository.ClienteRepository;
 
 @Service
-public class PaisService implements PaisRepository{
+public class ClienteService implements ClienteRepository{
 	
-
+	
 	@Autowired
-	private PaisRepository paisRepository;
-
-	
-	
-	@Override
-	public List<Pais> findAll() {
-		return paisRepository.findAll();
-	}
+	private ClienteRepository clienteRepository;
 
 	@Override
-	public List<Pais> findAll(Sort sort) {
+	public List<Cliente> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Pais> findAllById(Iterable<Long> ids) {
+	public List<Cliente> findAll(Sort sort) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Pais> List<S> saveAll(Iterable<S> entities) {
+	public List<Cliente> findAllById(Iterable<Long> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Cliente> List<S> saveAll(Iterable<S> entities) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -52,13 +51,13 @@ public class PaisService implements PaisRepository{
 	}
 
 	@Override
-	public <S extends Pais> S saveAndFlush(S entity) {
+	public <S extends Cliente> S saveAndFlush(S entity) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void deleteInBatch(Iterable<Pais> entities) {
+	public void deleteInBatch(Iterable<Cliente> entities) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -70,36 +69,37 @@ public class PaisService implements PaisRepository{
 	}
 
 	@Override
-	public Pais getOne(Long id) {
+	public Cliente getOne(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Pais> List<S> findAll(Example<S> example) {
+	public <S extends Cliente> List<S> findAll(Example<S> example) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Pais> List<S> findAll(Example<S> example, Sort sort) {
+	public <S extends Cliente> List<S> findAll(Example<S> example, Sort sort) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Page<Pais> findAll(Pageable pageable) {
+	public Page<Cliente> findAll(Pageable pageable) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Pais> S save(S entity) {
-		return paisRepository.save(entity);
+	public <S extends Cliente> S save(S entity) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	public Optional<Pais> findById(Long id) {
+	public Optional<Cliente> findById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -123,13 +123,13 @@ public class PaisService implements PaisRepository{
 	}
 
 	@Override
-	public void delete(Pais entity) {
+	public void delete(Cliente entity) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void deleteAll(Iterable<? extends Pais> entities) {
+	public void deleteAll(Iterable<? extends Cliente> entities) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -141,27 +141,28 @@ public class PaisService implements PaisRepository{
 	}
 
 	@Override
-	public <S extends Pais> Optional<S> findOne(Example<S> example) {
+	public <S extends Cliente> Optional<S> findOne(Example<S> example) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Pais> Page<S> findAll(Example<S> example, Pageable pageable) {
+	public <S extends Cliente> Page<S> findAll(Example<S> example, Pageable pageable) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Pais> long count(Example<S> example) {
+	public <S extends Cliente> long count(Example<S> example) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public <S extends Pais> boolean exists(Example<S> example) {
+	public <S extends Cliente> boolean exists(Example<S> example) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
+	
 }
